@@ -1412,6 +1412,9 @@
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+  -webkit-animation-duration: linear;
+  animation-duration: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes fadeInDownBig {
@@ -1478,6 +1481,9 @@
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
+  -webkit-animation-duration: linear;
+  animation-duration: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes fadeInLeftBig {
@@ -1516,6 +1522,7 @@
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
+    opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
   }
@@ -1544,6 +1551,9 @@
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+  -webkit-animation-duration: linear;
+  animation-duration: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes fadeInRightBig {
@@ -1755,6 +1765,9 @@
 .fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
+  -webkit-animation-duration: linear;
+  animation-duration: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes fadeOutLeftBig {
@@ -1813,6 +1826,9 @@
 .fadeOutRight {
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
+  -webkit-animation-duration: linear;
+  animation-duration: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes fadeOutRightBig {
