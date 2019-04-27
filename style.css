@@ -1,6 +1,6 @@
 h1{
     color: #FFFFFF;
-font-family: 'Bungee Hairline', cursive;
+    font-family: 'Bungee Hairline', cursive;
     font-size: 60px;
     text-align: center;
 }
@@ -17,6 +17,10 @@ h3{
     font-family: 'Bungee Hairline', cursive;
     font-size: 25px;
     text-align: center;
+}
+
+a{
+    text-decoration: none;
 }
 
 .date{
@@ -68,17 +72,11 @@ p3{
     font-size: 25px;
 }
 
-.selected a{
-    color: #00b
-}
-
-#menu:hover{
-}
-
 nav{
     background-color: rgba(0,0,0,0.6);
     margin: 0px;
     overflow: hidden;
+    position: sticky;
 }
 
 nav ul{
@@ -90,6 +88,10 @@ nav ul{
 nav ul li{
     display: inline-block;
     list-style-type: none;
+}
+
+nav ul li:hover{
+    background-color: rgba(0,0,0,0.75);
 }
 
 nav > ul > li > a {
@@ -121,18 +123,23 @@ nav > ul > li > a {
     height: 200px;
 }
 
-.sticky{
-    position:fixed;
-    top: 0px;
-    width: 100%;
+.button{
+    text-align: center;
+    align-content: center;
+    padding: 10px 10px;
+    width: 150px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,0.6);
 }
 
-.sticky + .content{
-    padding-top: 102px;
+.button:hover{
+    background-color: rgba(0,0,0,0.75);
 }
 
 .header{
     padding: 10px 10px;
+    position: sticky;
 }
 
 .footer{
