@@ -1481,8 +1481,8 @@
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  -webkit-animation-duration: linear;
-  animation-duration: linear;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
   animation-timing-function: linear;
 }
 
@@ -1551,9 +1551,9 @@
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-  -webkit-animation-duration: linear;
-  animation-duration: linear;
-  animation-timing-function: linear;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  animation-timing-function: linear
 }
 
 @-webkit-keyframes fadeInRightBig {
