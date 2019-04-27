@@ -124,8 +124,6 @@ nav > ul > li > a {
     background-color: rgba(0,0,0,0.6);
     padding: 2em 2em;
     margin: 20px 15%;
-    #height: 500px;
-    #overflow-y: scroll;
 }
 
 #profile{
