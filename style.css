@@ -57,11 +57,21 @@ p3{
     color: #b1d0d8;
 }
 
+p4{
+    color: #b1d0d8;
+    background-color: #282828;
+    padding: 5px 5px;
+}
+
 .social{
     color: #FFFFFF;
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
     text-decoration: none;
+}
+
+#pswd{
+    color: #94cc78;
 }
 
 .logo{
@@ -86,6 +96,12 @@ nav{
     top: 0px;
     z-index:10;
     background:inherit;
+}
+
+.content{
+    display: contents;
+    
+    text-decoration: none;
 }
 
 nav ul{
@@ -122,6 +138,10 @@ img{
     height: 40%;
     width: 100%;
     object-fit: contain;
+}
+
+.writeup{
+    height: 85%;
 }
 
 .blog{
