@@ -135,13 +135,13 @@ nav > ul > li > a {
 }
 
 img{
-    height: 40%;
     width: 100%;
+    margin: 0px 0px;
     object-fit: contain;
 }
 
 .writeup{
-    height: 85%;
+    width: 100%;
 }
 
 .blog{
