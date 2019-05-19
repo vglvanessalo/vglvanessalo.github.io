@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>natas4</title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Inconsolata" rel="stylesheet">
+        <link rel=stylesheet type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/animate.css">
+    </head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <body>
+        
+        <div class="header">
+        <a href="index.html" class="logo"><h1>Vanessa Lo</h1></a>
+        </div>
+        
+        <div class="wrapper">
+        <nav>
+        <ul>
+            <li><a id="menu" href="/aboutme.html">about me</a></li>
+            <li><a id="menu" href="/blog/blog.html">blog</a></li>
+            <li><a id="menu" href="/writeups/writeups.html">write ups</a></li>
+            <li><a id="menu" href="/portfolio.html">portfolio</a></li>
+        </ul>
+        </nav>
+        
+        <h2 class="animated fadeInLeft">NATAS4</h2>
+        </div>
+            
+        <div class="bottomwrapper animated fadeInRight">
+        <div class="blog">
+            <h3 class="date">17/05/2019</h3>
+            <h4>OBJECTIVE:</h4>
+            <p2>The aim of this level is to find the password for the natas4 site.</p2>
+            <br><br>
+            
+            <h4>TOOLS:</h4>
+            <p2>No tools are needed for this level.</p2>
+            <br><br>
+            
+            <h4>METHOD:</h4>
+            <p2>Using the password obtained from level 2-3, login to the natas3 site. The following page (see below) once successfully logged in will display a message saying that there is nothing on the page.</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/3/lvl3-4a.png">
+            <br><br>
+            
+            <p2>As with any website when looking for information, the first step is to look at the source code. To do so, right click in your browser window and select "view page source". The source code will then be displayed in a new tab (if using chrome).<br><br> Look through the source code, paying particular attention to any comments in the code. In the source code, there is a comment which says "No more information leaks!! Not even Google will find it this time..." (see below).</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/3/lvl3-4b.png">
+            <br><br>
+            
+            <p2>Given the hint that "Not even Google will find it" points to the idea of web crawlers, spiders and internet bots. Web crawlers, spiders and internet bots are often used by search engines and sites to update web content and often access these sites without approval, these bots also take requests from site that include a "robots.txt" file.<br><br> To access the "robots.txt" file from the natas3 site, add "/robots.txt" to the end of the URL in the browser's address bar. The "robots.txt" file should load showing a "/s3cr3t/" directory (see below). </p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/3/lvl3-4c.png">
+            <br><br>
+            
+            <p2>To access the "/s3cr3t/" directory from the natas3 site, add "/s3cr3t/" to the end of the URL in the browser's address bar. The directory should load showing a folder containing a .txt file (see below). </p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/3/lvl3-4d.png">
+            <br><br>
+            
+            <p2>Click on the "user.txt" file and the password for natas4 appears in the file (see below).   
+            <br><br>
+                <p4>The password for natas4 is: <p4 id="pswd">Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ</p4></p4>
+            </p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/3/lvl3-4e.png">
+            
+            <br><br>
+            
+            <a href="/writeups/natas/natas5.html"><div class="button"><p2>PROCEED TO LEVEL 4-5</p2></div></a>
+            <br>
+            <a href="/writeups/natas/natas3.html"><div class="button"><p2>GO BACK TO LEVEL 2-3</p2></div></a>
+            <br>
+            <a href="/writeups/natas/index.html"><div class="button"><p2>RETURN TO INDEX</p2></div></a>
+        </div>
+        </div>
+            
+        <div class="footer"><p1>©vglvanessalo 2019</p1></div>
+        
+    </body>
+    
+</html>

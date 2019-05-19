@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>natas6</title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Inconsolata" rel="stylesheet">
+        <link rel=stylesheet type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/animate.css">
+    </head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <body>
+        
+        <div class="header">
+        <a href="index.html" class="logo"><h1>Vanessa Lo</h1></a>
+        </div>
+        
+        <div class="wrapper">
+        <nav>
+        <ul>
+            <li><a id="menu" href="/aboutme.html">about me</a></li>
+            <li><a id="menu" href="/blog/blog.html">blog</a></li>
+            <li><a id="menu" href="/writeups/writeups.html">write ups</a></li>
+            <li><a id="menu" href="/portfolio.html">portfolio</a></li>
+        </ul>
+        </nav>
+        
+        <h2 class="animated fadeInLeft">NATAS6</h2>
+        </div>
+            
+        <div class="bottomwrapper animated fadeInRight">
+        <div class="blog">
+            <h3 class="date">18/05/2019</h3>
+            <h4>OBJECTIVE:</h4>
+            <p2>The aim of this level is to find the password for the natas6 site.</p2>
+            <br><br>
+            
+            <h4>TOOLS:</h4>
+            <p2>Burp Suite</p2>
+            <br><br>
+            
+            <h4>METHOD:</h4>
+            <p2>Using the password obtained from level 4-5, login to the natas5 site. The following page (see below) once successfully logged in will display a message saying that access is disallowed because you are not logged in.</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/5/lvl5-6a.png">
+            <br><br>
+            
+            <p2>Since we are not logged in, we need to find a way to login without using a password. In order to do that, we need to edit a cookie that is stored upon visiting the site. In order to edit the cookie, we need to use Burp Suite. Once Burp Suite is installed, follow the instructions on the Burp Suite website to setup a proxy connection and to ensure that your browser is connected to the Burp Suite listener. <br><br> Once Burp Suite is configured, go to the natas5 site and open up Burp Suite. Here we go to the Proxy tab and then the Intercept panel (ensuring intercept is on) refresh the natas5 page and the cookie information will appear in Burp Suite (see below).</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/5/lvl5-6b.png">
+            <br><br>
+            
+            <p2>Right click on any part of the cookie information and then click on "Send to Repeater".</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/5/lvl5-6c.png">
+            <br><br>
+            
+            <p2>Click on the Repeater tab and then click on the Params tab. Under the Params tab, you will see a list of cookies, notice that there is a "loggedin" cookie which shows a value of "0" meaning that you are not logged in. In order to edit the cookie so they we are logged in, we need to change the value of "loggedin" from "0" to "1". Once the value is changed, press the "Go" button in the top left corner of the window.</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/5/lvl5-6d.png">
+            <br><br>
+            
+            <p2>Once the page has reloaded with the edited cookie, the response section on the right will show the source code of the reloaded page. The new message will show "Access granted." and the password for natas6 is given (see below).
+            <br><br>
+                <p4>The password for natas6 is: <p4 id="pswd">aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1</p4></p4>
+            </p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/5/lvl5-6e.png">
+            
+            <br><br>
+            
+            <a href="/writeups/natas/natas7.html"><div class="button"><p2>PROCEED TO LEVEL 6-7</p2></div></a>
+            <br>
+            <a href="/writeups/natas/natas5.html"><div class="button"><p2>GO BACK TO LEVEL 4-5</p2></div></a>
+            <br>
+            <a href="/writeups/natas/index.html"><div class="button"><p2>RETURN TO INDEX</p2></div></a>
+        </div>
+        </div>
+            
+        <div class="footer"><p1>©vglvanessalo 2019</p1></div>
+        
+    </body>
+    
+</html>

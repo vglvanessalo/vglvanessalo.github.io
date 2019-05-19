@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>natas7</title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Inconsolata" rel="stylesheet">
+        <link rel=stylesheet type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/animate.css">
+    </head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <body>
+        
+        <div class="header">
+        <a href="index.html" class="logo"><h1>Vanessa Lo</h1></a>
+        </div>
+        
+        <div class="wrapper">
+        <nav>
+        <ul>
+            <li><a id="menu" href="/aboutme.html">about me</a></li>
+            <li><a id="menu" href="/blog/blog.html">blog</a></li>
+            <li><a id="menu" href="/writeups/writeups.html">write ups</a></li>
+            <li><a id="menu" href="/portfolio.html">portfolio</a></li>
+        </ul>
+        </nav>
+        
+        <h2 class="animated fadeInLeft">NATAS7</h2>
+        </div>
+            
+        <div class="bottomwrapper animated fadeInRight">
+        <div class="blog">
+            <h3 class="date">18/05/2019</h3>
+            <h4>OBJECTIVE:</h4>
+            <p2>The aim of this level is to find the password for the natas7 site.</p2>
+            <br><br>
+            
+            <h4>TOOLS:</h4>
+            <p2>No tools are needed for this level.</p2>
+            <br><br>
+            
+            <h4>METHOD:</h4>
+            <p2>Using the password obtained from level 5-6, login to the natas6 site. The following page (see below) once successfully logged in will display an input field asking for a secret and a link to view the source code.</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/6/lvl6-7a.png">
+            <br><br>
+            
+            <p2>Click on the "View sourcecode" link. In this particular source code, there is a directory to a file called "secret.inc" in the script which is accessible through "includes/secret.inc" (see below).</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/6/lvl6-7b.png">
+            <br><br>
+            
+            <p2>To access the "secret.inc" file from the natas6 site, add "includes/secret.inc" to the end of the URL in the browser address bar and the "secret.inc" file should load (see below). The secret will appear in the file.</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/6/lvl6-7c.png">
+            <br><br>
+            
+            <p2>Go back to the natas6 site and input the secret that was found in the "secret.inc" file. Then press submit (see below).</p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/6/lvl6-7d.png">
+            <br><br>
+            
+            <p2>The page will reload with a message displaying the password for natas7 (see below).
+            <br><br>
+                <p4>The password for natas7 is: <p4 id="pswd">7z3hEENjQtflzgnT29q7wAvMNfZdh0i9</p4></p4>
+            </p2>
+            <br><br>
+            <img class="writeup" src="/writeups/resources/Natas/6/lvl6-7e.png">
+            
+            <br><br>
+            
+            <a href="/writeups/natas/natas8.html"><div class="button"><p2>PROCEED TO LEVEL 7-8</p2></div></a>
+            <br>
+            <a href="/writeups/natas/natas6.html"><div class="button"><p2>GO BACK TO LEVEL 5-6</p2></div></a>
+            <br>
+            <a href="/writeups/natas/index.html"><div class="button"><p2>RETURN TO INDEX</p2></div></a>
+        </div>
+        </div>
+            
+        <div class="footer"><p1>©vglvanessalo 2019</p1></div>
+        
+    </body>
+    
+</html>
